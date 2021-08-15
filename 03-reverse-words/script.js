@@ -9,7 +9,11 @@
 */
 
 function reverseWords(str) {
-    // Напишите код здесь
+  if (typeof str === 'string') {
+    const array = str.replace(/[^0-9a-zA-Zа-яёА-ЯЁ]/g, ' ').trim().replace(/\s+/g, ' ').split(' ');
+    const revString = array.reverse().join(' ');
+    return revString;
+  }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
