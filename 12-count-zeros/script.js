@@ -9,7 +9,7 @@
 function countZeros(n) {
   if (typeof n === 'number'&& Number.isInteger(n) === true && n !== 0) {
     let str = '';
-    for (i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
       str += i;
     }
     return str.split('').filter(item => item === '0').length;

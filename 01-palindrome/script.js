@@ -17,13 +17,7 @@ function palindrome(str) {
   if (typeof str === 'string') {
     const oneArg = str.replace(/[^0-9a-zA-Zа-яёА-ЯЁ]/g, '');
     const twoArg = oneArg.split('').reverse().join('');
-    if (oneArg.toLowerCase() === twoArg.toLowerCase()) {
-        return true;
-    } else {
-        return false;
-    }
-  } else {
-    return false;
+    return oneArg.toLowerCase() === twoArg.toLowerCase();
   }
 }
 

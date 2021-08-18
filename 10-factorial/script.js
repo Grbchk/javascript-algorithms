@@ -11,14 +11,13 @@ function factorial(n) {
   let result = 1;
   if (typeof n === 'number'&& Number.isInteger(n) === true) {
     if (n > 1) {
-      for (i = 1; i <= n; i++) {
+      for (let i = 1; i <= n; i++) {
         let prev = result;
         result = prev*i;
       }
     }
     return result;
   }
-  return false;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

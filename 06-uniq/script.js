@@ -7,12 +7,16 @@
  *
 */
 
-function uniq(arr) {
-  const uniqNum = arr.filter(function (item, position, array) {
-    return array.lastIndexOf(item) === position;
-  });
-  return uniqNum.sort();
-}
+/*Вариант 1*/
+// function uniq(arr) {
+//   const uniqNum = arr.filter(function (item, position, array) {
+//     return array.lastIndexOf(item) === position;
+//   });
+//   return uniqNum.sort();
+// }
+
+/*Вариант 2*/
+const uniq = (arr) => [...new Set(arr)];
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

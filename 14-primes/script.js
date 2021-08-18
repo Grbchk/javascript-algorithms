@@ -8,7 +8,7 @@
 
 function primes(num) {
   function isPrime(n) {
-    for (i = 2; i < n; i++) {
+    for (let i = 2; i < n; i++) {
       if (n % i === 0) {
         return false;
       }
@@ -16,7 +16,7 @@ function primes(num) {
     return n > 1;
   }
   let arr = [];
-  for (i = 1; i <= num; i++) {
+  for (let i = 1; i <= num; i++) {
     arr[i-1] = i;
   }
   arr = arr.filter(item => isPrime(item) === true);

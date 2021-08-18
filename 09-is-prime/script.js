@@ -10,9 +10,10 @@
 */
 
 function isPrime(n) {
-  for (i = 2; i < n; i++) {
+  for (i = 2; i < Math.sqrt(n); i++) {
+    console.log(i);
     if (n % i === 0) {
-      return false;
+    return false;
     }
   }
   return n > 1;
@@ -25,4 +26,5 @@ console.log(isPrime(1)); // false
 console.log(isPrime(3)); // true
 console.log(isPrime(6)); // false
 console.log(isPrime(17)); // true
+
 

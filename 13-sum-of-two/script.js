@@ -9,13 +9,13 @@
 */
 
 function sumOfTwo(arr, sum) {
-  for (i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     const sumArr = arr[0] + arr[i];
     if (sumArr === sum) {
-      return true
+      return true;
     }
   }
-  return false
+  return false;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
